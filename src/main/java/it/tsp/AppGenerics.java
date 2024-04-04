@@ -14,6 +14,8 @@ public class AppGenerics {
         System.out.println(AppGenerics.<Double>somma(10.60, 45.23));
 
         System.out.println(sommaPariDispari(Arrays.asList(4,2.8,9,5,3)));
+
+        System.out.println(checkArray(Stream.of(1,4,7,6).toArray(), Stream.of(1,4,6,7).toArray()));
     }
 
     private static <T> boolean checkArray(T[] array1, T[] array2) {
